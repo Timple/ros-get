@@ -17,7 +17,7 @@ if ENV_KEY not in os.environ:
 workspace = os.path.join(os.path.normpath(os.environ[ENV_KEY]), '')
 installed_dir = os.path.join(workspace, '.env', 'installed', '')
 target_path = os.path.join(workspace, 'src', '')
-link_dir = os.path.join('..', 'src_link', '')
+link_dir = os.path.join(workspace, 'src_link', '')
 
 
 def log_workspace():
